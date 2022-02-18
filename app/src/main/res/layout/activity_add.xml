@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm món ăn mới"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:text="Nhập tên món ăn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="Tên món ăn"
+                android:id="@+id/dish_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:background="@drawable/boder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:text="Bước 1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/step_1_detail"
+                    android:hint="Nhập chi tiết bước"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:id="@+id/step_1_image"
+                    android:hint="Nhập link hình ảnh món ăn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+
+                android:padding="10dp"
+                android:background="@drawable/boder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:text="Bước 2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/step_2_detail"
+                    android:hint="Nhập chi tiết bước"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
+                    android:id="@+id/step_2_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+
+                android:padding="10dp"
+                android:background="@drawable/boder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:text="Bước 3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/step_3_detail"
+                    android:hint="Nhập chi tiết bước"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
+                    android:id="@+id/step_3_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+
+                android:padding="10dp"
+                android:background="@drawable/boder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:text="Bước 4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/step_4_detail"
+                    android:hint="Nhập chi tiết bước"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
+                    android:id="@+id/step_4_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+
+                android:padding="10dp"
+                android:background="@drawable/boder"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FFEB3B"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:text="Bước 5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/step_5_detail"
+                    android:hint="Nhập chi tiết bước"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
+                    android:id="@+id/step_5_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:text="Thêm"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
