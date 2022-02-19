@@ -20,6 +20,27 @@ object SharePreferenceUtils {
         }
     }
 
+    fun getRating(id: String, activity: Activity) : Int {
+        val sharedPref = activity.getSharedPreferences("COOKY", Context.MODE_PRIVATE) ?: return 0
+        val count = sharedPref.getInt(id + "RATING_NUM", 0)
+        return count
+    }
+
+    fun getComment(id: String, activity: Activity) : String? {
+        val sharedPref = activity.getSharedPreferences("COOKY", Context.MODE_PRIVATE) ?: return ""
+        val count = sharedPref.getString(id + "COMMENT", "")
+        return count
+    }
+
+    fun saveRating(id: String, num: Int, comment: String, activity: Activity) {
+        val sharedPref = activity.getSharedPreferences("COOKY", Context.MODE_PRIVATE) ?: return
+        with (sharedPref.edit()) {
+            putInt(id + "RATING_NUM", num)
+            putString(id+ "COMMENT", comment)
+            apply()
+        }
+    }
+
     fun getDish(id: String, activity: Activity): Dish {
         val sharedPref = activity.getSharedPreferences("COOKY", Context.MODE_PRIVATE)
         val name = sharedPref.getString(id + "name", "")

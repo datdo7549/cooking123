@@ -91,6 +91,8 @@ class AddActivity : AppCompatActivity() {
                 i5.text.toString(),
             this)
             SharePreferenceUtils.saveCount(count + 1,this)
+
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }
