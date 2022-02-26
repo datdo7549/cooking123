@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/add"
     tools:context=".AddActivity">
 
     <ScrollView
@@ -15,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -24,6 +26,7 @@
                 android:layout_margin="20dp" />
 
             <TextView
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold|italic"
                 android:text="Nhập tên món ăn"
@@ -31,6 +34,8 @@
                 android:layout_height="wrap_content"/>
 
             <EditText
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:hint="Tên món ăn"
                 android:id="@+id/dish_name"
                 android:layout_width="match_parent"
@@ -51,11 +56,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_1_detail"
                     android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_1_image"
                     android:hint="Nhập link hình ảnh món ăn"
                     android:layout_width="match_parent"
@@ -71,6 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:textColorHint="@color/white"
                     android:textColor="#FFEB3B"
                     android:textSize="20sp"
                     android:textStyle="bold|italic"
@@ -78,11 +88,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_2_detail"
                     android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_2_image"
                     android:layout_width="match_parent"
@@ -105,11 +119,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_3_detail"
                     android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_3_image"
                     android:layout_width="match_parent"
@@ -132,11 +150,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_4_detail"
                     android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_4_image"
                     android:layout_width="match_parent"
@@ -159,11 +181,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:id="@+id/step_5_detail"
                     android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
                 <EditText
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_5_image"
                     android:layout_width="match_parent"

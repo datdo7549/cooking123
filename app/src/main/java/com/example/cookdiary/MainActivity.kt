@@ -4,12 +4,13 @@ import android.Manifest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var btnAdd: FloatingActionButton
+    private lateinit var btnAdd: Button
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: DishAdapter
     private lateinit var list: ArrayList<Dish>
