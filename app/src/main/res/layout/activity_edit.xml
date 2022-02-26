@@ -15,14 +15,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/name"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Goi ga"
+                android:text="Sửa món ăn"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:layout_margin="20dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:text="Nhập tên món ăn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="Tên món ăn"
+                android:id="@+id/dish_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
             <LinearLayout
                 android:layout_marginBottom="15dp"
@@ -38,15 +50,16 @@
                     android:text="Bước 1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <TextView
+                <EditText
                     android:id="@+id/step_1_detail"
+                    android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
-                <ImageView
-                    android:src="@drawable/ic_image"
+                <EditText
                     android:id="@+id/step_1_image"
+                    android:hint="Nhập link hình ảnh món ăn"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="100dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -64,15 +77,16 @@
                     android:text="Bước 2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <TextView
+                <EditText
                     android:id="@+id/step_2_detail"
+                    android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
-                <ImageView
-                    android:src="@drawable/ic_image"
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_2_image"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="100dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -90,15 +104,16 @@
                     android:text="Bước 3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <TextView
+                <EditText
                     android:id="@+id/step_3_detail"
+                    android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
-                <ImageView
-                    android:src="@drawable/ic_image"
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_3_image"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="100dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -116,19 +131,21 @@
                     android:text="Bước 4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <TextView
+                <EditText
                     android:id="@+id/step_4_detail"
+                    android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
-                <ImageView
-                    android:src="@drawable/ic_image"
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_4_image"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="100dp"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_marginBottom="15dp"
+
                 android:padding="10dp"
                 android:background="@drawable/boder"
                 android:orientation="vertical"
@@ -141,78 +158,25 @@
                     android:text="Bước 5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <TextView
+                <EditText
                     android:id="@+id/step_5_detail"
+                    android:hint="Nhập chi tiết bước"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
-                <ImageView
-                    android:src="@drawable/ic_image"
+                <EditText
+                    android:hint="Nhập link hình ảnh món ăn"
                     android:id="@+id/step_5_image"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="100dp"/>
             </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_marginBottom="15dp"
+                android:padding="10dp"
+                android:text="Lưu"
+                android:textAllCaps="false"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:text="Số sao: "
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <EditText
-                    android:inputType="number"
-                    android:id="@+id/rating"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:text="Đánh giá: "
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <EditText
-                    android:gravity="top"
-                    android:hint="Viết đánh giá"
-                    android:id="@+id/comment"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <Button
-                    android:layout_margin="20dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/btn_rating"
-                    android:textAllCaps="false"
-                    android:text="Đánh giá"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"/>
-
-                <Button
-                    android:layout_margin="20dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/btn_edit"
-                    android:textAllCaps="false"
-                    android:text="Chỉnh sửa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"/>
-            </LinearLayout>
-
-
-
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </ScrollView>
 

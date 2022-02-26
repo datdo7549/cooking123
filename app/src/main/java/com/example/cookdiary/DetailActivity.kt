@@ -28,6 +28,7 @@ class DetailActivity : AppCompatActivity() {
     private lateinit var num: EditText
     private lateinit var comment: EditText
     private lateinit var btnRating: Button
+    private lateinit var btnEDit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +53,7 @@ class DetailActivity : AppCompatActivity() {
         i5 = findViewById(R.id.step_5_image)
 
         btnRating = findViewById(R.id.btn_rating)
+        btnEDit = findViewById(R.id.btn_edit)
         num = findViewById(R.id.rating)
         comment = findViewById(R.id.comment)
 
@@ -74,6 +76,15 @@ class DetailActivity : AppCompatActivity() {
         btnRating.setOnClickListener {
             SharePreferenceUtils.saveRating(dish.id!!, num.text.toString().toInt(), comment.text.toString(), this)
             startActivity(Intent(this, MainActivity::class.java))
+        }
+
+        btnEDit.setOnClickListener {
+            val intent = Intent(this, EditActivity::class.java)
+            val bundle = Bundle()
+            bundle.putString("ID", id)
+            intent.putExtras(bundle)
+
+            startActivity(intent)
         }
     }
 }
