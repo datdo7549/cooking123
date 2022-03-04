@@ -160,6 +160,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginBottom="25dp"
+                android:padding="10dp"
+                android:background="@drawable/boder_4"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -177,6 +180,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/boder_4"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

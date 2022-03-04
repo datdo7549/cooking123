@@ -18,6 +18,7 @@ import android.R.attr.data
 import android.app.Activity
 import android.net.Uri
 import android.widget.Button
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.io.FileNotFoundException
 import java.io.InputStream
 
@@ -42,7 +43,7 @@ class AddActivity : AppCompatActivity() {
     private var uri4 = ""
     private var uri5 = ""
 
-    private lateinit var btn_add: Button
+    private lateinit var btn_add: FloatingActionButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
